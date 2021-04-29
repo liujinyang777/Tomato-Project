@@ -105,6 +105,12 @@
       </div>
     </div>
     <div class="gray" style="margin:.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">设计师</div>
+      </div>
+    </div>
   </div>
 </template>
 
