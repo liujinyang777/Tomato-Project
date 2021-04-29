@@ -6,12 +6,16 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: '/',
-    redirect: "/home"
+    redirect: "/zx_List"
   },
   {
     path: '/home',
     name: 'Home',
     component: () => import('../views/Home.vue'),
+  },{
+    path: '/zx_List',
+    name: 'zx_List',
+    component: () => import('../views/zx_List.vue'),
   },
 ];
 
