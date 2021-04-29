@@ -1,5 +1,11 @@
 <template>
   <div class="zx_box">
+    <l-top>
+      <p slot="left">
+        <img class="logo" src="/切图/logo.png" alt="" />
+      </p>
+      <p slot="middle">房先森</p>
+    </l-top>
     <div class="zx_nav">
       <ul>
         <li>筛选 <i class="iconfont">&#xe61a;</i>|</li>
@@ -191,10 +197,10 @@
       房先森互联网家装有别于传统装修公司与其他装修中介平台以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
     </p>
     <div class="zx_xian"></div>
-    <div class="zx_buttom" >
+    <div class="zx_buttom">
       <i class="iconfont">&#xe607;</i>服务热线:400-9977-658
     </div>
-    <div class="zx_buttom2" >
+    <div class="zx_buttom2">
       <span>触屏版</span>
       <span>电脑版</span>
       <span>关于我们</span>
@@ -209,6 +215,9 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.logo {
+  width: 130%;
+}
 * {
   padding: 0rem;
   margin: 0rem;
@@ -275,7 +284,6 @@ export default {};
   display: flex;
   margin-bottom: 10px;
   margin-top: 10px;
-
 }
 .zx_an1 {
   width: 33%;
@@ -299,17 +307,17 @@ p {
   font-size: 0.28rem;
   height: 1.7rem;
 }
-.zx_buttom{
+.zx_buttom {
   height: 0.5rem;
   line-height: 0.5rem;
   font-size: 0.3rem;
   text-align: center;
 }
-.zx_buttom i{
+.zx_buttom i {
   font-size: 0.4rem;
   color: #2bb281;
 }
-.zx_buttom2{
+.zx_buttom2 {
   width: 100%;
   height: 1.1rem;
   font-size: 0.35rem;

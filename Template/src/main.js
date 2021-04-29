@@ -11,6 +11,9 @@ Vue.config.productionTip = false;
 import http from "./http/http.js";
 Vue.prototype.$http = http;
 
+import lTop from "@/components/Heads.vue"
+Vue.component("lTop",lTop)
+
 import axios from "axios";
 Vue.prototype.$axios = axios;
 
