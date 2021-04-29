@@ -4,10 +4,17 @@ import VueRouter from "vue-router";
 Vue.use(VueRouter);
 
 const routes = [
+<<<<<<< HEAD
   {
     path: '/',
     redirect: "/zx_List"
   },
+=======
+  // {
+  //   path: '/',
+  //   redirect: "/home"
+  // },
+>>>>>>> 886d57c6644343696fabe62f4cd3d275bd5de339
   {
     path: '/home',
     name: 'Home',
@@ -16,6 +23,11 @@ const routes = [
     path: '/zx_List',
     name: 'zx_List',
     component: () => import('../views/zx_List.vue'),
+  },
+  {
+    path: '/lhome',
+    name: 'Home',
+    component: () => import('../views/LHome.vue'),
   },
 ];
 
