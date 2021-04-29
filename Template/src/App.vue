@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>6s531g2</h1>
     <router-view />
   </div>
 </template>

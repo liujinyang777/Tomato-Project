@@ -13,6 +13,16 @@ const routes = [
     name: 'Home',
     component: () => import('../views/Home.vue'),
   },
+  {
+    path: '/xrp_home',
+    name: 'Xrp_home',
+    component: () => import('../views/Xrp_home.vue'),
+  },,
+  {
+    path: '/xrp_nav',
+    name: 'Xrp_nav',
+    component: () => import('../views/Xrp_nav.vue'),
+  },
 ];
 
 
