@@ -3,15 +3,18 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-const routes = [
-  {
+const routes = [{
     path: '/',
-    redirect: "/home"
+    redirect: "/S-list"
   },
   {
     path: '/home',
     name: 'Home',
     component: () => import('../views/Home.vue'),
+  }, {
+    path: '/S-list',
+    name: 'S-list',
+    component: () => import('../views/S-list.vue'),
   },
 ];
 

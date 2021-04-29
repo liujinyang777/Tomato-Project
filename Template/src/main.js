@@ -3,6 +3,11 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
+import "@/assets/css/common.css"
+import "@/assets/css/reset.css"
+import "@/assets/js/app.js"
+import "/public/iconfont/iconfont.css"
+
 Vue.config.productionTip = false;
 
 import http from "./http/http.js";
