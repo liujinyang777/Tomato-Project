@@ -17,11 +17,15 @@ const routes = [
     path: '/xrp_home',
     name: 'Xrp_home',
     component: () => import('../views/Xrp_home.vue'),
-  },,
+  },
   {
     path: '/xrp_nav',
     name: 'Xrp_nav',
     component: () => import('../views/Xrp_nav.vue'),
+  },{
+    path: '/xrp_email',
+    name: 'Xrp_email',
+    component: () => import('../views/Xrp_email.vue'),
   },
 ];
 

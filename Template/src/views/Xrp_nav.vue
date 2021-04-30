@@ -79,48 +79,57 @@
           <div class="cent">2/30</div>
           <div class="right">下一页</div>
         </footer>
-        <nav class="cent">
-          房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐
-          + 个性化定制服务。
-        </nav>
+      
       </div>
-      <div class="foot">
-        <div>
-          <p>
-            <i class="iconfont icon-hot-line"></i>
-            <span>服务热线：400——9977——658</span>
-          </p>
-          <ul>
-            <li class="bg">触屏版</li>
-            <li>电脑版</li>
-            <li>关于我们</li>
-            <li>联系我们</li>
-          </ul>
-        </div>
-      </div>
-      <div class="zzc">
-        <img src="/切图/quoten_bottom.png" alt="" />
-        <div>免费获取报价</div>
-      </div>
+     <footers></footers>
     </div>
   </div>
 </template>
 
 <script>
+import footers from "@/components/Footers.vue";
 export default {
   data() {
     return {};
   },
   mounted() {},
   methods: {},
+  components: {
+    footers,
+  },
 };
 </script>
 
 <style lang='scss'>
-.logo{
+.logo {
   width: 130%;
 }
 #xrp_box {
+  ul {
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    height: 1rem;
+    font-size: 0.36rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      color: #000;
+    }
+    .iconfont {
+      font-size: 0.36rem;
+    }
+    .icon-down {
+      font-size: 0.25rem;
+      color: #999;
+    }
+    .icon-search {
+      color: #39c894;
+    }
+    span {
+      color: #f4f4f4;
+    }
+  }
   .zzc {
     display: flex;
     justify-content: space-around;
@@ -161,12 +170,7 @@ export default {
   .icon-hot-line {
     color: #39c894;
   }
-  .cent {
-    font-size: 0.35rem;
-    line-height: 0.5rem;
-    color: #666666;
-    background: #fff;
-  }
+
   .bom {
     margin: 0 !important;
     display: flex;
@@ -193,31 +197,7 @@ export default {
       flex: 1;
     }
   }
-  ul {
-    border-top: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
-    height: 1rem;
-    font-size: 0.36rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    li {
-      color: #000;
-    }
-    .iconfont {
-      font-size: 0.36rem;
-    }
-    .icon-down {
-      font-size: 0.25rem;
-      color: #999;
-    }
-    .icon-search {
-      color: #39c894;
-    }
-    span {
-      color: #f4f4f4;
-    }
-  }
+
   .box-botoom {
     background-color: #f4f4f4;
     overflow: hidden;
