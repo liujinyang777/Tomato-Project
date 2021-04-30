@@ -110,7 +110,85 @@
         <div class="le1"><b>|</b></div>
         <div class="le2">设计师</div>
       </div>
+      <div class="bigpic">
+
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">换换
+            <i class="iconfont icon-change"></i>
+          </div>
+          
+          <div class="ri">更多设计师
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="gray" style="margin:.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">效果图</div>
+      </div>
+      <div class="effectpic">
+
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">换换
+            <i class="iconfont icon-change"></i>
+          </div>
+          
+          <div class="ri">更多效果图
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin:.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">工地直播</div>
+      </div>
+      <div class="worklive">
+
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">换换
+            <i class="iconfont icon-change"></i>
+          </div>
+          
+          <div class="ri">更多工地直播
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin:.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">装修攻略</div>
+      </div>
+      <div class="listcont">
+
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">换换
+            <i class="iconfont icon-change"></i>
+          </div>
+          
+          <div class="ri">更多装修攻略
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin:.36rem 0"></div>
   </div>
 </template>
 
@@ -311,6 +389,30 @@ export default {
         font-size: .36rem;
         text-align: center;
         line-height: 0.7rem;
+      }
+    }
+  }
+}
+.cont1{
+  width: 100%;
+  .und{
+    width: 100%;
+    .inner{
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      font-size: .28rem;
+      text-align: center;
+      color: #39c894;
+      line-height: 0.7rem;
+      ;
+      .le{
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+      }
+      .ri{
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
       }
     }
   }
