@@ -14,4 +14,7 @@ export default {
 </script>
 
 <style lang='scss'>
+.logo {
+  width: 130%;
+}
 </style>

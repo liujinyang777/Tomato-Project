@@ -1,6 +1,12 @@
 <template>
       
   <div class="">
+    <lTop>
+      <p slot="left">
+        <img src="/切图/logo.png" alt="" class="logo" />
+      </p>
+      <p slot="middle">效果图</p></p>
+    </lTop>
     <div id="xrp_box">
       <ul>
         <li>户型<i class="iconfont icon-down"></i></li>
@@ -111,6 +117,9 @@ export default {
 </script>
 
 <style lang='scss'>
+.logo{
+  width: 130%;
+}
 #xrp_box {
   .zzc {
     display: flex;
@@ -120,7 +129,7 @@ export default {
     img {
       width: 70%;
     }
-    div{
+    div {
       background-color: #feb505;
       border-radius: 15px;
       font-size: 0.3rem;
