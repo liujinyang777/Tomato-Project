@@ -4,7 +4,7 @@
       <p slot="left">
         <img class="logo" src="/切图/logo.png" alt="" />
       </p>
-      <p slot="middle">房先森aaaa</p>
+      <p slot="middle">房先森aaaass</p>
     </l-top>
     <div class="zx_nav">
       <ul>
