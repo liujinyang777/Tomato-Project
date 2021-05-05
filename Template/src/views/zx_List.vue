@@ -193,7 +193,7 @@
     </div>
     <div class="zx_xian"></div>
 
-    <p>
+    <p class="aa" >
       房先森互联网家装有别于传统装修公司与其他装修中介平台以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
     </p>
     <div class="zx_xian"></div>
@@ -303,7 +303,7 @@ export default {};
   color: #ffffff;
   background-color: #39c894;
 }
-p {
+.aa {
   font-size: 0.28rem;
   height: 1.7rem;
 }
