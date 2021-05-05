@@ -28,7 +28,7 @@ const routes = [{
 >>>>>>> zhang-xiong
   {
     path: '/home',
-    name: 'Home',
+    name: 'Homex',
     component: () => import('../views/Home.vue'),
 <<<<<<< HEAD
   }, {
@@ -97,6 +97,7 @@ const routes = [{
     path: '/lhome',
     name: 'lhome',
     component: () => import('../views/LHome.vue'),
+<<<<<<< HEAD
   }, {
     path: '/xrp_detail',
     name: 'Xrp_detail',
@@ -105,6 +106,23 @@ const routes = [{
     path: '/xrp_zc',
     name: 'Xrp_zc',
     component: () => import('../views/Xrp_zc.vue'),
+=======
+  },
+  {
+    path: '/lhome2',
+    name: 'lhome2',
+    component: () => import('../views/LHome2.vue'),
+  },
+  {
+    path: '/lhome12',
+    name: 'lhome12',
+    component: () => import('../views/LHome12.vue'),
+  },
+  {
+    path: '/lhome13',
+    name: 'lhome13',
+    component: () => import('../views/LHome13.vue'),
+>>>>>>> ljy
   }
 ];
 

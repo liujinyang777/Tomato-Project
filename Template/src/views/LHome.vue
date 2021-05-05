@@ -104,23 +104,161 @@
         </div>
       </div>
     </div>
-    <div class="gray" style="margin:.36rem 0"></div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
     <div class="cont1">
       <div class="top">
         <div class="le1"><b>|</b></div>
         <div class="le2">设计师</div>
       </div>
+      <div class="bigpic">
+        <div class="designs" v-for="(a, b) in designer" :key="b" @click="skip(a)">
+          <div class="design">
+            <img :src="a.pic" alt="" />
+          </div>
+          <div class="na">{{ a.name }}</div>
+          <div class="deep">
+            <div class="inner">{{ a.degree }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">
+            换换
+            <i class="iconfont icon-change"></i>
+          </div>
+
+          <div class="ri">
+            更多设计师
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">效果图</div>
+      </div>
+      <div class="effectpic"></div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">
+            换换
+            <i class="iconfont icon-change"></i>
+          </div>
+
+          <div class="ri">
+            更多效果图
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">工地直播</div>
+      </div>
+      <div class="worklive"></div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">
+            换换
+            <i class="iconfont icon-change"></i>
+          </div>
+
+          <div class="ri">
+            更多工地直播
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
+    <div class="cont1">
+      <div class="top">
+        <div class="le1"><b>|</b></div>
+        <div class="le2">装修攻略</div>
+      </div>
+      <div class="listcont">
+        <div class="inner" v-for="(a, b) in listcont" :key="b">
+          <div class="le">
+            <img :src="a.pic" alt="" />
+          </div>
+          <div class="ri">
+            <p class="tops">{{ a.title }}</p>
+            <div class="bot">
+              <span>
+                <i class="iconfont icon-time"></i>
+                {{ a.time }}</span
+              >
+              <span>
+                <i class="iconfont icon-view"></i>
+                {{ a.num }}</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="und">
+        <div class="inner">
+          <div class="le">
+            换换
+            <i class="iconfont icon-change"></i>
+          </div>
+
+          <div class="ri">
+            更多装修攻略
+            <i class="iconfont icon-more"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
+    <div class="introduce">
+      <div class="inner">
+        房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐
+        + 个性化定制服务。
+      </div>
+    </div>
+    <div class="gray" style="margin: 0.36rem 0"></div>
+    <l-bot @show="show" :show="shows"></l-bot>
   </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      listcont: [],
+      shows: true,
+      designer: [],
+    };
   },
-  mounted() {},
-  methods: {},
+  mounted() {
+    this.$http("/lhome.json").then((res) => {
+      // console.log(res.data.data);
+      this.listcont = res.data.data;
+    });
+    this.$http("/designer.json").then((res) => {
+      console.log(res);
+      this.designer = res.data.data;
+    });
+  },
+  methods: {
+    show() {
+      this.shows = !this.shows;
+    },
+    skip(x){
+      this.$router.push({
+        path:'/lhome12',
+        query:{x}
+      })
+    }
+  },
 };
 </script>
 
@@ -305,14 +443,115 @@ export default {
         color: #cacaca;
         outline: none;
       }
-      .inp:nth-child(4){
+      .inp:nth-child(4) {
         background-color: #feb505;
         color: white;
-        font-size: .36rem;
+        font-size: 0.36rem;
         text-align: center;
         line-height: 0.7rem;
       }
     }
+  }
+}
+.cont1 {
+  width: 100%;
+  .bigpic {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    .designs {
+      width: 100%;
+      // width: 23%;
+      .design {
+        width: 80%;
+        height: 1.6rem;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .na {
+        font-size: 0.36rem;
+          margin: .1rem 0;
+      }
+      .deep {
+        font-size: 0.24rem;
+        margin: .2rem 0;
+      }
+    }
+  }
+  .und {
+    width: 100%;
+    .inner {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      font-size: 0.28rem;
+      text-align: center;
+      color: #39c894;
+      line-height: 0.7rem;
+      .le {
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+      }
+      .ri {
+        width: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.164);
+      }
+    }
+  }
+}
+.cont1 {
+  width: 100%;
+  .listcont {
+    width: 100%;
+    .inner {
+      width: 95%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      margin: 0.24rem auto;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.144);
+      .le {
+        width: 32%;
+        img {
+          width: 100%;
+        }
+      }
+      .ri {
+        width: 66%;
+        font-size: 0.36rem;
+        .tops {
+          width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .bot {
+          width: 93%;
+          margin: 0.66rem auto 0;
+          color: #999;
+          span:nth-child(1) {
+          }
+          span:nth-child(2) {
+            margin-left: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+.introduce {
+  width: 100%;
+  .inner {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #333;
+    text-indent: 2em;
   }
 }
 </style>
