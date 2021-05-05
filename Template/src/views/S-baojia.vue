@@ -1,5 +1,6 @@
 <template>
   <div id="box-sixteen">
+    <h1>666</h1>
     <img src="/切图/10quoted.jpg" class="banner" />
     <figure>
       <h3>房先森10s报价</h3>
