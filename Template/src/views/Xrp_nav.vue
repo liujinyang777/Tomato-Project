@@ -5,7 +5,7 @@
       <p slot="left">
         <img src="/切图/logo.png" alt="" class="logo" />
       </p>
-      <p slot="middle">效果图</p></p>
+      <p slot="middle">效果图</p>
     </lTop>
     <div id="xrp_box">
       <ul>
@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang="scss">
 .logo {
   width: 130%;
 }
@@ -233,4 +233,5 @@ export default {
     }
   }
 }
+
 </style>

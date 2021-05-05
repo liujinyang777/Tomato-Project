@@ -1,9 +1,8 @@
 <template>
-<<<<<<< HEAD
+
   <div class="l-bottom" v-show="show">
-=======
-  <div class="l-bottom">
->>>>>>> ljy
+
+
     <div class="wrap">
       <div class="top">
         <span> <i class="iconfont icon-tel"></i></span>
@@ -16,11 +15,11 @@
         <span>联系我们</span>
       </div>
     </div>
-<<<<<<< HEAD
-    <div class="wrb">
-=======
+
+
+
     <div class="wrb"  v-show="show">
->>>>>>> ljy
+
       <div class="pic">
         <div class="le">
           <span><img @click="hide" src="/切图/common/icon_close.png" alt="" /></span>
@@ -40,16 +39,15 @@
 
 <script>
 export default {
-    props:["show"],
-    data(){
-        return{
-        }
+  props: ["show"],
+  data() {
+    return {};
+  },
+  methods: {
+    hide() {
+      this.$emit("show");
     },
-    methods:{
-        hide(){
-            this.$emit("show")
-        }
-    }
+  },
 };
 </script>
 
@@ -87,7 +85,7 @@ export default {
     width: 100%;
     padding: 0.32rem auto;
     background-color: #000;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     position: relative;
     .pic {
       width: 100%;
@@ -100,12 +98,12 @@ export default {
         position: absolute;
         left: 0;
         top: 0;
-        span{
-            img{
-                width: .4rem;
-                height: .4rem;
-                color: #39c894;
-            }
+        span {
+          img {
+            width: 0.4rem;
+            height: 0.4rem;
+            color: #39c894;
+          }
         }
       }
       .mod {

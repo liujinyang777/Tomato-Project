@@ -15,6 +15,7 @@ import "@/assets/css/reset.css"
 import "@/assets/js/app.js"
 import "/public/iconfont/iconfont.css"
 
+
 Vue.config.productionTip = false;
 
 import BaiduMap from 'vue-baidu-map'

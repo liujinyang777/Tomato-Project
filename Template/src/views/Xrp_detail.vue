@@ -59,7 +59,7 @@ export default {
 };
 </script>
 
-<style lang='scss'>
+<style lang="scss">
 .xrp_detail {
   position: relative;
   footer {

@@ -5,11 +5,7 @@ Vue.use(VueRouter);
 
 
 const routes = [
-  {
-    path: '/home',
-    name: 'Homex',
-    component: () => import('../views/Home.vue'),
-  }, {
+ {
     path: '/S-list',
     name: 'S-list',
     component: () => import('../views/S-list.vue'),
@@ -31,6 +27,30 @@ const routes = [
     path: '/S-baojia',
     name: 'S-baojia',
     component: () => import('../views/S-baojia.vue'),
+  },{
+    path: '/zx_List',
+    name: 'zx_List',
+    component: () => import('../views/zx_List.vue'),
+  },
+  {
+    path: '/zx_List2',
+    name: 'zx_List2',
+    component: () => import('../views/zx_List2.vue'),
+  },
+  {
+    path: '/zx_List3',
+    name: 'zx_List3',
+    component: () => import('../views/zx_List3.vue'),
+  },
+  {
+    path: '/zx_List4',
+    name: 'zx_List4',
+    component: () => import('../views/zx_List4.vue'),
+  },
+  {
+    path: '/zx_List5',
+    name: 'zx_List5',
+    component: () => import('../views/zx_List5.vue'),
   },
   {
     path: '/xrp_home',
