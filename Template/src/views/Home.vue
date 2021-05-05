@@ -2,7 +2,7 @@
   <div class="">
     <l-top>
       <p slot="left">
-        <img class="logo" src="/切图/logo.png" alt="">
+        <img class="logo" src="/切图/logo.png" alt="" />
       </p>
       <p slot="middle">房先森</p>
     </l-top>
@@ -14,13 +14,15 @@ export default {
   data() {
     return {};
   },
-  mounted() {},
   methods: {},
 };
 </script>
 
+
+
+
 <style lang='scss'>
-.logo{
+.logo {
   width: 130%;
 }
 </style>

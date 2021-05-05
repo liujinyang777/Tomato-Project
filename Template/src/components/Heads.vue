@@ -63,9 +63,9 @@ export default {
       font-size: 0rem;
       color: #999999;
       text-align: center;
-      .user {
-        // font-size: .9rem;
-      }
+      // .user {
+      //   // font-size: .9rem;
+      // }
       .nav {
         margin-left: 0.2rem;
         // font-size: .66rem;
