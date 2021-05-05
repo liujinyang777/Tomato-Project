@@ -43,10 +43,31 @@ const routes = [{
     component: () => import('../views/S-baojia.vue'),
   },
   {
-    path: '/lhome',
-    name: 'Home',
-    component: () => import('../views/LHome.vue'),
+    path: '/xrp_home',
+    name: 'Xrp_home',
+    component: () => import('../views/Xrp_home.vue'),
   },
+  {
+    path: '/xrp_nav',
+    name: 'Xrp_nav',
+    component: () => import('../views/Xrp_nav.vue'),
+  }, {
+    path: '/xrp_email',
+    name: 'Xrp_email',
+    component: () => import('../views/Xrp_email.vue'),
+  }, {
+    path: '/lhome',
+    name: 'lhome',
+    component: () => import('../views/LHome.vue'),
+  }, {
+    path: '/xrp_detail',
+    name: 'Xrp_detail',
+    component: () => import('../views/Xrp_detail.vue'),
+  }, {
+    path: '/xrp_zc',
+    name: 'Xrp_zc',
+    component: () => import('../views/Xrp_zc.vue'),
+  }
 ];
 
 

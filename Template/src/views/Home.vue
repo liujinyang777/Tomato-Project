@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="">
     <l-top>
       <p slot="left">
@@ -7,6 +8,10 @@
       <p slot="middle">房先森</p>
     </l-top>
   </div>
+=======
+      
+  <div class=""></div>
+>>>>>>> xrp
 </template>
 
 <script>

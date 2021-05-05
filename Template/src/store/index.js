@@ -10,7 +10,7 @@ import vuexPersist from "vuex-persist";
 export default new Vuex.Store({
   //数据（状态）
   state: {
-
+    user: "",
   },
   //方法 修改状态
   mutations: {
