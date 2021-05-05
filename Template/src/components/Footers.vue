@@ -1,6 +1,6 @@
 <template>
       
-  <div class="">
+  <div class="fot">
     <nav class="cent">
       房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐
       + 个性化定制服务。
@@ -37,6 +37,8 @@ export default {
 </script>
 
 <style lang='scss' scoped>
+.fot{
+}
 .cent {
   font-size: 0.35rem;
   line-height: 0.5rem;
