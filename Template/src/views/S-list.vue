@@ -1,6 +1,13 @@
 <template>
   <div>
-    <div class="s-dv"></div>
+    <div class="s-dv">
+      <lTop>
+        <p slot="left">
+          <img class="logo" src="/切图/logo.png" alt="" />
+        </p>
+        <p slot="middle">装修预算</p>
+      </lTop>
+    </div>
 
     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
       <van-swipe-item><img src="/house_info.jpg" alt="" /></van-swipe-item>
@@ -68,9 +75,111 @@
     </div>
 
     <div class="s-mk"></div>
+    <div class="s-hz">
+      <div class="s-cc"></div>
+      <div class="s-cn">猜您喜欢</div>
+    </div>
 
-    <div class="s-cc">
+    <div class="s-li">
+      <ul>
+        <li>
+          <div class="ll">
+            <img src="/fxsli.jpg" alt="" />
+          </div>
+          <div class="rr">
+            <p>
+              【房先森装修学院】毛坯房如何不装修也漂亮？毛坯房装修如何验收？
+            </p>
+            <div class="dvv">
+              <span>
+                <i class="iconfont icon-time"></i>
+                <span>2021-04-30</span>
+              </span>
+              <span>
+                <i class="iconfont icon-view"> </i>
+                <span>316</span>
+              </span>
+            </div>
+          </div>
+        </li>
 
+        <li>
+          <div class="ll">
+            <img src="/fxsli1.png" alt="" />
+          </div>
+          <div class="rr">
+            <p>
+              【房先森装修学院】毛坯房如何不装修也漂亮？毛坯房装修如何验收？
+            </p>
+            <div class="dvv">
+              <span>
+                <i class="iconfont icon-time"></i>
+                <span>2021-04-30</span>
+              </span>
+              <span>
+                <i class="iconfont icon-view"> </i>
+                <span>316</span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="ll">
+            <img src="/fxsli.jpg" alt="" />
+          </div>
+          <div class="rr">
+            <p>
+              【房先森装修学院】毛坯房如何不装修也漂亮？毛坯房装修如何验收？
+            </p>
+            <div class="dvv">
+              <span>
+                <i class="iconfont icon-time"></i>
+                <span>2021-04-30</span>
+              </span>
+              <span>
+                <i class="iconfont icon-view"> </i>
+                <span>316</span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="ll">
+            <img src="/fxsli1.png" alt="" />
+          </div>
+          <div class="rr">
+            <p>
+              【房先森装修学院】毛坯房如何不装修也漂亮？毛坯房装修如何验收？
+            </p>
+            <div class="dvv">
+              <span>
+                <i class="iconfont icon-time"></i>
+                <span>2021-04-30</span>
+              </span>
+              <span>
+                <i class="iconfont icon-view"> </i>
+                <span>316</span>
+              </span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="s-tp"></div>
+    <div class="s-qq">
+      <p>
+        房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，利用互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐
+        + 个性化定制服务。
+      </p>
+    </div>
+     <div class="s-tp"></div>
+    <div class="s-qw">
+        <ul>
+          <li>
+            <span></span>
+          </li>
+          <li>2</li>
+        </ul>
     </div>
   </div>
 </template>
@@ -85,8 +194,79 @@ export default {
 </script>
 
 <style lang='scss'>
-.s-cc{
-    width: 5px;
+.s-qw {
+  width: 100%;
+  ul li {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.s-tp {
+  width: 100%;
+  height: 16px;
+  background-color: #f4f4f4;
+}
+.s-qq {
+  padding: 13px 0;
+  width: 100%;
+  p {
+    text-indent: 2em;
+    font-size: 16px;
+  }
+}
+.dvv {
+  display: flex;
+  justify-content: left;
+  span span {
+    font-size: 16px;
+  }
+  span:nth-child(2) {
+    margin-left: 10px;
+  }
+}
+.s-li {
+  width: 100%;
+  ul li {
+    display: flex;
+    justify-content: space-between;
+    .ll {
+      img {
+        width: 150px;
+      }
+    }
+    .rr {
+      p {
+        width: 220px;
+        font-size: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      p:hover {
+        overflow: visible;
+        white-space: inherit;
+        text-overflow: inherit;
+      }
+    }
+  }
+}
+.s-cn {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 8px;
+}
+.logo {
+  width: 130%;
+}
+.s-hz {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+.s-cc {
+  width: 5px;
+  height: 30px;
+  background-color: #37c993;
 }
 .s-mk {
   margin-top: 10px;
