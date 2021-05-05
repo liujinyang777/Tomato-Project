@@ -3,18 +3,8 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-<<<<<<< HEAD
+
 const routes = [
-  // {
-  //   path: '/',
-  //   redirect: "/home"
-  // },
-=======
-const routes = [{
-    path: '/',
-    redirect: "/S-ttp"
-  },
->>>>>>> err
   {
     path: '/home',
     name: 'Homex',
@@ -59,7 +49,6 @@ const routes = [{
     path: '/lhome',
     name: 'lhome',
     component: () => import('../views/LHome.vue'),
-<<<<<<< HEAD
   }, {
     path: '/xrp_detail',
     name: 'Xrp_detail',
@@ -68,7 +57,6 @@ const routes = [{
     path: '/xrp_zc',
     name: 'Xrp_zc',
     component: () => import('../views/Xrp_zc.vue'),
-=======
   },
   {
     path: '/lhome2',
@@ -84,7 +72,7 @@ const routes = [{
     path: '/lhome13',
     name: 'lhome13',
     component: () => import('../views/LHome13.vue'),
->>>>>>> ljy
+
   }
 ];
 
