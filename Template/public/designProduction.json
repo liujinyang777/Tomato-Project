@@ -1,0 +1,76 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "img": "http://img.sirfang.com/effect_img/2020/10/15/91f3a32d6f13e7f5c804afbbdf589f8d.jpg",
+            "title": "超豪华中式一室一厅",
+            "house": "一室",
+            "style": "中式",
+            "price": "一亿"
+        },
+        {
+            "id": "2",
+            "img": "http://img.sirfang.com/effect_img/2020/10/08/a438801d7bd9496ced407fb864ef1ccc.jpg",
+            "title": "超豪华欧式二室二厅",
+            "house": "二室",
+            "style": "欧式",
+            "price": "俩亿"
+        },
+        {
+            "id": "3",
+            "img": "http://img.sirfang.com/effect_img/2020/09/28/235d574eda5662e27eea29da04bce265.jpg",
+            "title": "超豪华现代三室三厅",
+            "house": "三室",
+            "style": "现代",
+            "price": "仨亿"
+        },
+        {
+            "id": "4",
+            "img": "http://img.sirfang.com/effect_img/2020/09/21/ec8235bbabfc684f21c44af6aded7f23.jpg",
+            "title": "超豪华轻奢四室四厅",
+            "house": "四室",
+            "style": "轻奢",
+            "price": "四亿"
+        },
+        {
+            "id": "1",
+            "img": "http://img.sirfang.com/effect_img/2020/09/14/c88ffdfbc273ce0aa5f8a36c28c73f4f.jpg",
+            "title": "超豪华中式一室一厅",
+            "house": "一室",
+            "style": "中式",
+            "price": "一亿"
+        },
+        {
+            "id": "2",
+            "img": "http://img.sirfang.com/effect_img/2020/09/09/b42d72515e2f98db70eed8d57fb656cf.jpg",
+            "title": "超豪华欧式二室二厅",
+            "house": "二室",
+            "style": "欧式",
+            "price": "俩亿"
+        },
+        {
+            "id": "3",
+            "img": "http://img.sirfang.com/effect_img/2020/08/31/27942b221c322aec09c6a7ca46558ec9.jpg",
+            "title": "超豪华现代三室三厅",
+            "house": "三室",
+            "style": "现代",
+            "price": "仨亿"
+        },
+        {
+            "id": "4",
+            "img": "http://img.sirfang.com/effect_img/2020/08/26/12abe23b158615d3e804b81935f8d70e.jpg",
+            "title": "超豪华轻奢四室四厅",
+            "house": "四室",
+            "style": "轻奢",
+            "price": "四亿"
+        },
+        {
+            "id": "1",
+            "img": "http://img.sirfang.com/effect_img/2020/08/20/3ef5b10435db20cb0f68097d52be50bf.jpg",
+            "title": "超豪华中式一室一厅",
+            "house": "一室",
+            "style": "中式",
+            "price": "一亿"
+        }
+    ]
+}

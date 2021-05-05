@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <div class="l-bottom" v-show="show">
+=======
+  <div class="l-bottom">
+>>>>>>> ljy
     <div class="wrap">
       <div class="top">
         <span> <i class="iconfont icon-tel"></i></span>
@@ -12,7 +16,11 @@
         <span>联系我们</span>
       </div>
     </div>
+<<<<<<< HEAD
     <div class="wrb">
+=======
+    <div class="wrb"  v-show="show">
+>>>>>>> ljy
       <div class="pic">
         <div class="le">
           <span><img @click="hide" src="/切图/common/icon_close.png" alt="" /></span>
