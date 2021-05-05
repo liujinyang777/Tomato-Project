@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 <<<<<<< HEAD
 const routes = [
+<<<<<<< HEAD
   // {
   //   path: '/',
   //   redirect: "/home"
@@ -15,10 +16,21 @@ const routes = [{
     redirect: "/S-ttp"
   },
 >>>>>>> err
+=======
+  {
+    path: '/',
+    redirect: "/zx_List2"
+  },
+  {
+    path: '/',
+    redirect: "/home"
+  },
+>>>>>>> zhang-xiong
   {
     path: '/home',
     name: 'Home',
     component: () => import('../views/Home.vue'),
+<<<<<<< HEAD
   }, {
     path: '/S-list',
     name: 'S-list',
@@ -41,6 +53,32 @@ const routes = [{
     path: '/S-baojia',
     name: 'S-baojia',
     component: () => import('../views/S-baojia.vue'),
+=======
+  },{
+    path: '/zx_List',
+    name: 'zx_List',
+    component: () => import('../views/zx_List.vue'),
+  },
+  {
+    path: '/zx_List2',
+    name: 'zx_List2',
+    component: () => import('../views/zx_List2.vue'),
+  },
+  {
+    path: '/zx_List3',
+    name: 'zx_List3',
+    component: () => import('../views/zx_List3.vue'),
+  },
+  {
+    path: '/zx_List4',
+    name: 'zx_List4',
+    component: () => import('../views/zx_List4.vue'),
+  },
+  {
+    path: '/zx_List5',
+    name: 'zx_List5',
+    component: () => import('../views/zx_List5.vue'),
+>>>>>>> zhang-xiong
   },
   {
     path: '/xrp_home',

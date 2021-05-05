@@ -2,6 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+<<<<<<< HEAD
 
 import "@/assets/css/common.css"
 import "@/assets/css/reset.css"
@@ -14,6 +15,11 @@ import "@/assets/css/common.css"
 import "@/assets/css/reset.css"
 import "@/assets/js/app.js"
 import "/public/iconfont/iconfont.css"
+=======
+import "@/assets/css/common.css"
+import "@/assets/css/reset.css"
+import "@/assets/js/app.js"
+>>>>>>> zhang-xiong
 
 Vue.config.productionTip = false;
 
