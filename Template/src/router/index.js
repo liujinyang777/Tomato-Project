@@ -10,14 +10,29 @@ const routes = [
   // },
   {
     path: '/home',
-    name: 'Home',
+    name: 'Homex',
     component: () => import('../views/Home.vue'),
   },
   {
     path: '/lhome',
-    name: 'Home',
+    name: 'lhome',
     component: () => import('../views/LHome.vue'),
   },
+  {
+    path: '/lhome2',
+    name: 'lhome2',
+    component: () => import('../views/LHome2.vue'),
+  },
+  {
+    path: '/lhome12',
+    name: 'lhome12',
+    component: () => import('../views/LHome12.vue'),
+  },
+  {
+    path: '/lhome13',
+    name: 'lhome13',
+    component: () => import('../views/LHome13.vue'),
+  }
 ];
 
 
