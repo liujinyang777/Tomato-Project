@@ -5,11 +5,15 @@ Vue.use(VueRouter);
 
 
 const routes = [
- {
+  {
+    path: "/",
+    redirect: "/lhome",
+  },
+  {
     path: '/S-list',
     name: 'S-list',
     component: () => import('../views/S-list.vue'),
-  },{
+  }, {
     path: '/S-ttp',
     name: 'S-ttp',
     component: () => import('../views/S-ttp.vue'),
@@ -18,7 +22,7 @@ const routes = [
     path: '/S-dt',
     name: 'S-dt',
     component: () => import('../views/S-dt.vue'),
-  },{
+  }, {
     path: '/S-my',
     name: 'S-my',
     component: () => import('../views/S-my.vue'),
@@ -27,7 +31,7 @@ const routes = [
     path: '/S-baojia',
     name: 'S-baojia',
     component: () => import('../views/S-baojia.vue'),
-  },{
+  }, {
     path: '/zx_List',
     name: 'zx_List',
     component: () => import('../views/zx_List.vue'),
